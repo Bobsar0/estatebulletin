@@ -3,15 +3,13 @@ package http
 import (
 	"net/http"
 	"strings"
-
-	"github.com/estatebulletin/app"
 )
 
 type HttpHandler struct {
-	appHandler *app.AppHandler
+	appHandler *AppHandler
 }
 
-func NewHttpHandler(a *app.AppHandler) *HttpHandler {
+func NewHttpHandler(a *AppHandler) *HttpHandler {
 	return &HttpHandler{
 		appHandler: a,
 	}
